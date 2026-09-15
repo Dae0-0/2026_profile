@@ -146,16 +146,16 @@ th {
   font-weight: 500;
 }
 
-tbody tr:hover { background: #F7FAF9; }
+tbody tr:hover { background: #bff0e0; } /* 표에 마우스를 올리면 색 변환 */
 
 /* 연락처 */
 .contact ul {
-  list-style: none;
+  list-style: none; /* ul 태그의 기본 스타일 제거 */
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  display: flex; /* 가로 정렬 */
+  flex-wrap: wrap;  
+  gap: 12px; /* 간격 */
 }
 
 .contact li a {
@@ -164,9 +164,9 @@ tbody tr:hover { background: #F7FAF9; }
   border: 1px solid var(--teal);
   border-radius: 999px;
   color: var(--teal-dark);
-  text-decoration: none;
+  text-decoration: none; 
   font-size: 0.9rem;
-  transition: background 0.15s ease, color 0.15s ease;
+  transition: background 0.15s ease, color 0.15s ease; /* 호버 시 배경색과 글자색 전환 */
 }
 
 .contact li a:hover {
@@ -190,7 +190,7 @@ tbody tr:hover { background: #F7FAF9; }
     padding: 24px; 
   }
   table, thead, tbody, th, td, tr { 
-    display: block; 
+    /* display: block;  */
   }
   thead { 
     display: none; 
@@ -203,7 +203,7 @@ tbody tr:hover { background: #F7FAF9; }
     padding: 10px 0; 
     border-bottom: 1px solid var(--line); 
   }
-  td::before { 
+  td::before {
     content: attr(data-label); 
     display: block; 
     font-size: 0.75rem; 
